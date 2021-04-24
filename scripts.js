@@ -12,19 +12,19 @@ btsomar.addEventListener("click", function () {
     valor2Soma = valor2Soma.value
 
     if (valor1Soma < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
     } else if (valor2Soma < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
+    } else if (valor1Soma == 0) {
+        return alert("Não pode ser 0")
+    } else if (valor2Soma == 0) {
+        return alert("Não pode ser 0")
     } else {
         let soma = Number(valor1Soma) + Number(valor2Soma)
         resultadoSoma = document.getElementById("resultadoSoma")
         resultadoSoma.innerHTML = soma
     }
-    if (valor1Soma == 0) {
-        alert("Não pode ser 0")
-    } else if (valor2Soma == 0) {
-        alert("Não pode ser 0")
-    } else { }
+
 
 
 })
@@ -40,20 +40,20 @@ btSub.addEventListener("click", function () {
 
 
     if (valor1Sub < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
     } else if (valor2Sub < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
+    } else if (valor1Sub == 0) {
+        return alert("Não pode ser 0")
+    } else if (valor2Sub == 0) {
+        return alert("Não pode ser 0")
     } else {
 
         let Sub = Number(valor1Sub) - Number(valor2Sub)
         let resultadoSub = document.getElementById("resultadoSub")
         resultadoSub.innerHTML = Sub
     }
-    if (valor1Sub == 0) {
-        alert("Não pode ser 0")
-    } else if (valor2Sub == 0) {
-        alert("Não pode ser 0")
-    } else { }
+
 
 })
 
@@ -68,9 +68,9 @@ btMul.addEventListener("click", function () {
     valor2Mul = valor2Mul.value
 
     if (valor1Mul < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
     } else if (valor2Mul < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
     } else {
         let Mul = Number(valor1Mul) * Number(valor2Mul)
 
@@ -89,21 +89,45 @@ btDiv.addEventListener("click", function () {
 
 
     if (valor1Div < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
     } else if (valor2Div < 0) {
-        alert("Não pode colocar Número negativo")
+        return alert("Não pode colocar Número negativo")
+    } else if (valor1Div == 0) {
+        return alert("Não pode ser 0")
+    } else if (valor2Div == 0) {
+        return alert("Não pode ser 0")
     } else {
         let Div = Number(valor1Div) - Number(valor2Div)
 
         let resultadoDiv = document.getElementById("resultadoDiv")
         resultadoDiv.innerHTML = Div
     }
-    if (valor1Div == 0) {
-        alert("Não pode ser 0")
-    } else if (valor2Div == 0) {
-        alert("Não pode ser 0")
-    } else {
-    }
+
+
+
+})
+
+
+
+let limpar = document.getElementById("limpar")
+
+limpar.addEventListener("click", function () {
+document.getElementById("valor1Soma").value =""
+document.getElementById("valor2Soma").value =""
+document.getElementById("resultadoSoma").innerHTML =""
+//---------------------------------------------
+document.getElementById("valor1Sub").value =""
+document.getElementById("valor2Sub").value =""
+document.getElementById("resultadoSub").innerHTML =""
+//---------------------------------------------
+document.getElementById("valor1Mul").value =""
+document.getElementById("valor2Mul").value =""
+document.getElementById("resultadoMul").innerHTML =""
+//---------------------------------------------
+document.getElementById("valor1Div").value =""
+document.getElementById("valor2Div").value =""
+document.getElementById("resultadoDiv").innerHTML =""
+
 
 
 })

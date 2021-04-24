@@ -1,8 +1,22 @@
+*{
+    margin: 0;
+padding: 0;
+
+
+}
+body {
+    height: 100vh;
+}
+
+
+
+
+
 .calculo{
 display: flex;
 flex-direction:row;
 justify-content:center;
-
+margin-bottom: 30px;
 }
 
 #calculadora {
@@ -12,7 +26,7 @@ justify-content:center;
     justify-content: center;
     align-items: center;
     height: 499px;
-    width: 495px;
+    
 }
 
 #catoda {
@@ -30,13 +44,11 @@ justify-content:center;
 
 .espaco1 {
     flex: 1;
-    min-width: 20px;
-    width: 498px;
+
 }
 
 .espaco2{
-    flex: 0.9;
-    min-width: px;
+    flex: 1;
 }
 
 
