@@ -3,6 +3,62 @@ display: flex;
 flex-direction:row;
 justify-content:center;
 
-
 }
 
+#calculadora {
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 499px;
+    width: 495px;
+}
+
+#catoda {
+    height: 100vh !important;
+    max-height: 100vh;
+    display: flex;
+    flex-direction:row;
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    width: 499px;
+    }
+
+.espaco1 {
+    flex: 1;
+    min-width: 20px;
+    width: 498px;
+}
+
+.espaco2{
+    flex: 0.9;
+    min-width: px;
+}
+
+
+#btMul{
+    margin:2px ;
+}
+
+#btSub{
+    margin:2px ;
+}
+
+
+#btsomar{
+    margin:2px ;
+}
+
+#btDiv{
+    margin:2px ;
+}
+
+
+.sinal{
+margin:2px ;
+
+}
