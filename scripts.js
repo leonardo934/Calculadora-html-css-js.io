@@ -10,7 +10,10 @@ btsomar.addEventListener("click", function () {
 
     let valor2Soma = document.getElementById("valor2Soma")
     valor2Soma = valor2Soma.value
+
     if (valor1Soma < 0) {
+        alert("Não pode colocar Número negativo")
+    } else if (valor2Soma < 0) {
         alert("Não pode colocar Número negativo")
     } else {
         let soma = Number(valor1Soma) + Number(valor2Soma)
@@ -18,10 +21,10 @@ btsomar.addEventListener("click", function () {
         resultadoSoma.innerHTML = soma
     }
     if (valor1Soma == 0) {
-        alert("Não pode ser dividido por 0")
-    } else {
-
-    }
+        alert("Não pode ser 0")
+    } else if (valor2Soma == 0) {
+        alert("Não pode ser 0")
+    } else { }
 
 
 })
@@ -38,17 +41,19 @@ btSub.addEventListener("click", function () {
 
     if (valor1Sub < 0) {
         alert("Não pode colocar Número negativo")
+    } else if (valor2Sub < 0) {
+        alert("Não pode colocar Número negativo")
     } else {
-        let Sub = Number(valor1Sub) - Number(valor2Sub)
 
+        let Sub = Number(valor1Sub) - Number(valor2Sub)
         let resultadoSub = document.getElementById("resultadoSub")
         resultadoSub.innerHTML = Sub
     }
-
     if (valor1Sub == 0) {
-        alert("Não pode ser dividido por 0")
-    }
-
+        alert("Não pode ser 0")
+    } else if (valor2Sub == 0) {
+        alert("Não pode ser 0")
+    } else { }
 
 })
 
@@ -63,14 +68,14 @@ btMul.addEventListener("click", function () {
     valor2Mul = valor2Mul.value
 
     if (valor1Mul < 0) {
-
+        alert("Não pode colocar Número negativo")
+    } else if (valor2Mul < 0) {
         alert("Não pode colocar Número negativo")
     } else {
         let Mul = Number(valor1Mul) * Number(valor2Mul)
 
         let resultadoMul = document.getElementById("resultadoMul")
         resultadoMul.innerHTML = Mul
-
     }
 })
 let btDiv = document.getElementById("btDiv")
@@ -85,15 +90,19 @@ btDiv.addEventListener("click", function () {
 
     if (valor1Div < 0) {
         alert("Não pode colocar Número negativo")
+    } else if (valor2Div < 0) {
+        alert("Não pode colocar Número negativo")
     } else {
         let Div = Number(valor1Div) - Number(valor2Div)
 
         let resultadoDiv = document.getElementById("resultadoDiv")
         resultadoDiv.innerHTML = Div
     }
-
     if (valor1Div == 0) {
-        alert("Não pode ser dividido por 0")
+        alert("Não pode ser 0")
+    } else if (valor2Div == 0) {
+        alert("Não pode ser 0")
+    } else {
     }
 
 
